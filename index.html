@@ -19,14 +19,16 @@
         <p>
           Try to answer the following JavaScript-related questions within the time
           limit. Keep in mind that incorrect answers will penalize your
-          time by five seconds!
+          time by five seconds! If you complete all questions before the timer ends, those seconds will be added to you score!
         </p>
         <button id="start">Start Quiz</button>
       </div>
 ​
       <div id="questions" class="hide">
         <h2 id="question-title"></h2>
-        <div id="choices" class="choices"></div>
+        <div id="choices" class="choices">
+          <hr>
+        </div>
       </div>
 ​
       <div id="end-screen" class="hide">
@@ -38,7 +40,9 @@
         </p>
       </div>
 ​
-      <div id="feedback" class="feedback hide"></div>
+      <div id="feedback" class="feedback hide">
+        <h5 id="are-you-right"></h5>
+      </div>
     </div>
 ​
     <script src="assets/script.js"></script>

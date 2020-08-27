@@ -4,7 +4,7 @@ function populateHighscores() {
     for (var i = 0; i < highscores.length; i++){
       var tr = document.createElement("tr");
       table.appendChild(tr);
-      tr.textContent =  (i + 1) + ". " + highscores[i].initials + " || " + highscores[i].score;
+      tr.textContent =  (i + 1) + ".  " + highscores[i].initials + " --- " + highscores[i].score;
     }
 };
 

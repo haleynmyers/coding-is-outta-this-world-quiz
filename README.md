@@ -1,22 +1,28 @@
-# JavaScript Coding Quiz
-> A fun, quick quiz that generates 5 questions regarding JavaScript
+# Coding Is Outta This World!
+### JavaScript Coding Quiz
+> A fun, quick quiz that generates 10 questions regarding JavaScript with a time limit of 60 seconds.
 
-This website tests your knowledge of JavaScript in a race against the clock. If you answer incorrectly, five seconds is deducted from the clock. See if you can get a perfect score on the highscores page. 
+This website tests your knowledge of JavaScript in a race against the clock. If you answer incorrectly, five seconds is deducted from the clock. If you complete all the questions before the timer runs out, the number of seconds left will be added to your score. See if you can get a perfect score on the highscores page. 
 
 ![alt text](https://github.com/haleynmyers/coding-is-outta-this-world-quiz/blob/master/assets/codingQuizScreenshot.png "JavaScript Quiz Homepage")
 
+*****
+
 ## Installation
 
-You can open the deployed website at ().
+You can open the deployed website [here](https://haleynmyers.github.io/coding-is-outta-this-world-quiz/).
 
 If you want to play around with code, you can
-clone this repository (https://github.com/haleynmyers/coding-quiz) to your terminal and open it in VS Code or equivalent program.
+clone [this repository](https://github.com/haleynmyers/coding-is-outta-this-world-quiz) to your terminal and open it in VS Code or equivalent program.
+
+*****
 
 ## Usage 
 
 ![alt text](https://github.com/haleynmyers/coding-is-outta-this-world-quiz/blob/master/assets/codeQuizDemo.gif "Quiz demonstration")
 
 Sharpen your knowledge of JavaScript with a few trivia questions, or practivce your coding skills by adding to the game on your own.
+*****
 
 ## Credits
 
@@ -25,7 +31,7 @@ Base code provided by Trilogy Education Services with the intent to teach and pr
 Background image "Stardust" provided by Subtle Patterns (https://www.toptal.com/designers/subtlepatterns/stardust/).
 Created by Atle Mo.
 
-Special thanks to my rockstar brother-in-law Eric Satterwhite for helping me out in the 11th hour.
+Special thanks to my rockstar brother-in-law Eric Satterwhite for helping me out in the 11th hour. (https://github.com/erics2783).
 
 ## License 
 Copyright <2020> <Haley Myers>

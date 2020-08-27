@@ -1,51 +1,51 @@
 var questions = [
   { //index0
-    title: "Which symbol terminates a block of JavaScript code?",
+    title: "1. Which symbol terminates a block of JavaScript code?",
     choices: ["period", "curly brackets", "semi-colon", "comma"],
     answer: "semi-colon"
   },
   { //index1
-    title: "Which operator indicates that two values are not equal?",
+    title: "2. Which operator indicates that two values are not equal?",
     choices: ["!==", "/", "===", "=/="],
     answer: "!=="
   },
   { //index2
-    title: "Which of the following styles can NOT be used to name variables that contain more than one word?",
+    title: "3. Which of the following styles can NOT be used to name variables that contain more than one word?",
     choices: ["UpperCamelCase", "lowerCamelCase", "alllowercase", "use-dashes"],
     answer: "use-dashes"
   },
   { //index3
-    title: "Objects can be populated by which of the following?",
+    title: "4. Objects can be populated by which of the following?",
     choices: ["methods", "numbers", "arrays", "all of the above"],
     answer: "all of the above"
   },
   { //index4
-    title: "How would you refer to the value 'yellow' in the given array?   --  var colors = ['red', 'pink', 'yellow', 'white'];",
+    title: "5. Given: var colors = ['red', 'pink', 'yellow', 'grey'];   How would you select the value 'yellow'?",
     choices: ["colors(yellow)", "colors[3]", "colors[2]", "colors[yellow]"],
     answer: "colors[2]"
   },
   { //index5
-    title: "Inside which HTML element do we put the JavaScript?",
+    title: "6. Inside which HTML element do we put the JavaScript?",
     choices: ["<footer>", "<style>", "<script>", "<javascript>"],
     answer: "<script>"
   }, 
   { //index6
-    title: "How do you create a function in JavaScript?",
+    title: "7. How do you create a function in JavaScript?",
     choices: ["function newFunction()", "var function = newFunction()", "newFunction = ()", "create.newFunction"],
     answer: "function newFunction()"
   }, 
   { //index7
-    title: "What is needed to create a for loop?",
-    choices: ["for(var i = 0; i < array.length; i++)", "4.loop()", "var for = (0, array.length, i++)", "for(var i = 0 i < array.length i++)"],
+    title: "8. What is used to create a for loop?",
+    choices: ["for(var i = 0; i < array.length; i++)", "for.loop()", "var for = (0, array.length, i++)", "for(var i = 0 i < array.length i++)"],
     answer: "for(var i = 0; i < array.length; i++)"
   }, 
   { //index8
-    title: "How do you create a comment in JavaScript?",
+    title: "9. How do you create a comment in JavaScript?",
     choices: ["<!--This is a comment-->", "**Comment here**", "--My Comment", "//This is my comment"],
     answer: "//This is my comment"
   }, 
   { //index9
-    title: "Java is a nickname of JavaScript.",
+    title: "10. Java is an acceptible nickname for JavaScript.",
     choices: ["true", "false"],
     answer: "false"
   },
@@ -64,6 +64,7 @@ var submitBtn = document.getElementById("submit");
 var startBtn = document.getElementById("start");
 var initialsEl = document.getElementById("initials");
 var feedbackEl = document.getElementById("feedback");
+var snarkyComment = document.getElementById('are-you-right');
 var scoreEl = document.getElementById("final-score");
 
 //Listen for click on start button to start timer. 
@@ -82,6 +83,7 @@ function startQuiz() {
 };
 
 function grabQuestion() {
+  
   questionTitle.textContent = questions[currentQuestionIndex].title;
   var i = questions[currentQuestionIndex];
   choicesEl.innerHTML = "";
@@ -114,21 +116,14 @@ function startTimer() {
 function chooseAnswer() {
   if (this.value === questions[currentQuestionIndex].answer) {
     userScore = userScore + 1;
-    // console.log(userScore);
-    var correct = document.createElement("h6");
-    feedbackEl.textContent = correct;
-    correct.innerText = "That's Correct!";
-    correct.setAttribute('style', 'color: light grey; font-style: italic');
-
+    feedbackEl.removeAttribute("class");
+    snarkyComment.textContent = "--That's Correct!--";
   } else {
-    // WHEN I answer a question incorrectly THEN time is subtracted from the clock
+    // WHEN I answer a  incorrectly THEN time is subtracted from the clock
     secondsLeft = secondsLeft - 5;
     // console.log(userScore);
-    var incorrect = document.createElement("h6");
-    feedbackEl.appendChild(incorrect);
-    incorrect.textContent = "That's Incorrect!";
-    incorrect.setAttribute('style', 'color: light grey; font-style: italic');
-
+    feedbackEl.removeAttribute("class");
+    snarkyComment.textContent = "--Wrong!--";
   };
 
   currentQuestionIndex = currentQuestionIndex + 1;
@@ -137,7 +132,6 @@ function chooseAnswer() {
     // WHEN all questions are answered or the timer reaches THEN the game is over
   } else {
     clearInterval(timerInterval);
-    secondsLeft = 0;
     enterScore();
   }
 };
@@ -145,8 +139,9 @@ function chooseAnswer() {
 function enterScore() {
   var endScreen = document.getElementById("end-screen");
   questionsEl.setAttribute("class", "hide");
+  feedbackEl.setAttribute('class', 'hide');
   endScreen.removeAttribute("class");
-  scoreEl.innerText = userScore;
+  scoreEl.innerText = (userScore + secondsLeft);
   
 }
 // // WHEN the game is over THEN I can save my initials and score
