@@ -3,18 +3,20 @@
 
 This website tests your knowledge of JavaScript in a race against the clock. If you answer incorrectly, five seconds is deducted from the clock. See if you can get a perfect score on the highscores page. 
 
-![alt text](assets/codingQuizScreenshot.png "JavaScript Quiz Homepage")
+![alt text](https://github.com/haleynmyers/coding-quiz/blob/master/assets/codingQuizScreenshot.png "JavaScript Quiz Homepage")
 
 ## Installation
 
 You can open the deployed website at ().
 
 If you want to play around with code, you can
-clone this repository to your terminal and open it in VS Code or equivalent program.
+clone this repository (https://github.com/haleynmyers/coding-quiz) to your terminal and open it in VS Code or equivalent program.
 
-## Usage example
+## Usage 
 
-Sharpen your knowledge of JavaScript with a few trivia questions, or practive your coding skills by adding to the game on your own.
+![alt text](https://github.com/haleynmyers/coding-quiz/blob/master/assets/codeQuizDemo.gif "Quiz demonstration")
+
+Sharpen your knowledge of JavaScript with a few trivia questions, or practivce your coding skills by adding to the game on your own.
 
 ## Credits
 
