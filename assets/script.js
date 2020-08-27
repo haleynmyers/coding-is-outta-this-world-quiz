@@ -5,26 +5,50 @@ var questions = [
     answer: "semi-colon"
   },
   { //index1
-    title: "Which operator indicated that two values are not equal?",
-    choices: ["!", "/", "===", "=/="],
-    answer: "!"
+    title: "Which operator indicates that two values are not equal?",
+    choices: ["!==", "/", "===", "=/="],
+    answer: "!=="
   },
   { //index2
-    title: "Which of the folowing styles can NOT be used to name variables that contain more than one word?",
-    choices: ["upper camel case", "lower camel case", "underscore", "dash"],
-    answer: "dash"
+    title: "Which of the following styles can NOT be used to name variables that contain more than one word?",
+    choices: ["UpperCamelCase", "lowerCamelCase", "alllowercase", "use-dashes"],
+    answer: "use-dashes"
   },
   { //index3
     title: "Objects can be populated by which of the following?",
-    choices: ["methods", "booleans", "arrays", "all of the above"],
+    choices: ["methods", "numbers", "arrays", "all of the above"],
     answer: "all of the above"
   },
   { //index4
-    title: "The third element of an array would be referenced to by which index value?",
-    choices: ["3", "4", "index(3)", "index(4)"],
-    answer: "4"
+    title: "How would you refer to the value 'yellow' in the given array?   --  var colors = ['red', 'pink', 'yellow', 'white'];",
+    choices: ["colors(yellow)", "colors[3]", "colors[2]", "colors[yellow]"],
+    answer: "colors[2]"
   },
-  
+  { //index5
+    title: "Inside which HTML element do we put the JavaScript?",
+    choices: ["<footer>", "<style>", "<script>", "<javascript>"],
+    answer: "<script>"
+  }, 
+  { //index6
+    title: "How do you create a function in JavaScript?",
+    choices: ["function newFunction()", "var function = newFunction()", "newFunction = ()", "create.newFunction"],
+    answer: "function newFunction()"
+  }, 
+  { //index7
+    title: "What is needed to create a for loop?",
+    choices: ["for(var i = 0; i < array.length; i++)", "4.loop()", "var for = (0, array.length, i++)", "for(var i = 0 i < array.length i++)"],
+    answer: "for(var i = 0; i < array.length; i++)"
+  }, 
+  { //index8
+    title: "How do you create a comment in JavaScript?",
+    choices: ["<!--This is a comment-->", "**Comment here**", "--My Comment", "//This is my comment"],
+    answer: "//This is my comment"
+  }, 
+  { //index9
+    title: "Java is a nickname of JavaScript.",
+    choices: ["true", "false"],
+    answer: "false"
+  },
 ]
 
 // variable to keep track of quiz state

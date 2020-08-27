@@ -3,7 +3,7 @@
 
 This website tests your knowledge of JavaScript in a race against the clock. If you answer incorrectly, five seconds is deducted from the clock. See if you can get a perfect score on the highscores page. 
 
-![alt text](https://github.com/haleynmyers/coding-quiz/blob/master/assets/codingQuizScreenshot.png "JavaScript Quiz Homepage")
+![alt text](https://github.com/haleynmyers/coding-is-outta-this-world-quiz/blob/master/assets/codingQuizScreenshot.png "JavaScript Quiz Homepage")
 
 ## Installation
 
@@ -14,7 +14,7 @@ clone this repository (https://github.com/haleynmyers/coding-quiz) to your termi
 
 ## Usage 
 
-![alt text](https://github.com/haleynmyers/coding-quiz/blob/master/assets/codeQuizDemo.gif "Quiz demonstration")
+![alt text](https://github.com/haleynmyers/coding-is-outta-this-world-quiz/blob/master/assets/codeQuizDemo.gif "Quiz demonstration")
 
 Sharpen your knowledge of JavaScript with a few trivia questions, or practivce your coding skills by adding to the game on your own.
 
